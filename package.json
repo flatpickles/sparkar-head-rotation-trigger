@@ -1,0 +1,25 @@
+{
+  "name": "sparkar-head-rotation-trigger",
+  "version": "1.0.0",
+  "description": "A helper function to fire events when the user moves their head in Spark AR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/man1/sparkar-head-rotation-trigger.git"
+  },
+  "keywords": [
+    "sparkar",
+    "head",
+    "face",
+    "movement"
+  ],
+  "author": "Matt Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/man1/sparkar-head-rotation-trigger/issues"
+  },
+  "homepage": "https://github.com/man1/sparkar-head-rotation-trigger#readme"
+}
