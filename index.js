@@ -1,11 +1,16 @@
 module.exports = {
   /**
    * Execute an event function when detecting quick rotational movements of the specified face
-   * @param {Face}       face          A Face object used to detect rotational movements
-   * @param {Function}   eventFunction A function called when rotational face movements are detected
-   * @param {number=0.4} threshold     Configurable threshold for sensitivity of movement detection
+   * @param {Object}     config               Configuration parameters for the head rotation trigger
+   * @param {Face}       config.face          A Face object used to detect rotational movements
+   * @param {Function}   config.eventFunction A function called when rotational face movements are detected
+   * @param {number=0.4} config.threshold     Configurable threshold for sensitivity of movement detection
    */
-  bindEvent: (face, eventFunction, threshold = 0.4) => {
+  attach: (config) => {
+    const face = config.face;
+    const eventFunction = config.eventFunction;
+    const threshold = config.threshold || 0.4;
+
     const faceRotX = face.cameraTransform.rotationX;
     const faceRotY = face.cameraTransform.rotationY;
     const faceRotZ = face.cameraTransform.rotationZ;
