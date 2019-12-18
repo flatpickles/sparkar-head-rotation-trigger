@@ -1,7 +1,7 @@
 {
   "name": "sparkar-head-rotation-trigger",
-  "version": "1.0.0",
-  "description": "A helper function to fire events when the user moves their head in Spark AR",
+  "version": "1.0.1",
+  "description": "A helper function to fire events when the user moves their head in a Spark AR effect",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
